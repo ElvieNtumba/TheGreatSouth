@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainDiv{
+    height: 100%;
+    border: 2px solid black;
+}
+
+.homeBanner{
+    height: 100vh;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.bannerBody{
+    height: 100%;
+    border: 2px solid blue;
+}
+
+.oneStopShop{
+    height: 60vh;
+    border: 2px solid blueviolet;
+}
+
+.courtesyCars{
+    height: 40vh;
+    border: 2px solid red;
+}
+
+.wideRangeOfService{
+    height: 60vh;
+    border: 2px solid green;
+}
+
+.memberOfTheRmi{
+    height: 60vh;
+    border: 2px solid orange;
+}
+
+
+.gallery{
+    height: 60vh;
+    border: 2px solid pink;
+}
+
+.footer{
+    height: 40vh;
+    border: 2px solid brown;
+}
+
+.services{
+    height: 60vh;
+    border: 2px solid purple;
+}
+
+.approvals{
+    height: 60vh;
+    border: 2px solid cyan;
+}
+
+.contact{
+    height: 60vh;
+    border: 2px solid grey;
+    display: flex;
+}
+
+.aboutUs{
+    height: 100%;
+    border: 2px solid lightblue;
+    width: 50%;
+}
+
+.contactUs{
+    height: 100%;
+    border: 2px solid yellow;
+    width: 50%;
+}
+
+@media only screen and (min-width: 601px) {
+    div.mainDiv {
+      width: 100%;
+    }
+  }
