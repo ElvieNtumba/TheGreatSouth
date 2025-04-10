@@ -1,31 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The GreatSouth</title>
-    <link rel="stylesheet" href="styles.css">
-    <script href="app.js" ></script>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
     <div class="mainDiv">
-        <div class="homeBanner">
-            <div class="logo-div">navbar</div>
+      <div class="homeBanner">
+        <div class="navbar">
+          <div class="logo_div">
+            <img src="images/navbarlogo.jpg" width="90%" />
+          </div>
+          <div class="icon_div">
+            <!-- <i class="fa-brands fa-facebook-f"></i> -->
+          </div>
+          <div class="contact_div">
+            <nav>
+              <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#approvals">APPROVALS</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="bannerBody">
-            <div class="oneStopShop">Austin</div>
-            <div class="courtesyCars">Austin</div>
-            <div class="wideRangeOfService">Elvie</div>
-            <div class="memberOfTheRmi">Elvie</div>
-            <div class="gallery">Elvie</div>
-            <div class="services">Elvie</div>
-            <div class="approvals">Austin</div>
-            <div class="contact">
-                <div class="aboutUs">Gia</div>
-                <div class="contactUs">Gia</div>
+        <!-- homepage swipper -->
+        <div class="swipper__container">
+            <swiper-container
+            class="mySwiper"
+            slides-per-view="1"
+            loop="true"
+            autoplay-delay="3000"
+            autoplay-disable-on-interaction="false"
+            pagination="true"
+            pagination-clickable="true"
+            navigation="true"
+            space-between="30"
+            centered-slides="true"
+          >
+          <swiper-slide>
+            <div class="slide-container">
+              <img src="images/banner.jpg" alt="Slide 1" />
+              <div class="overlay_contact_div">
+                <h1>Welcome to Service Excellence</h1>
+                <p>
+                  Great South Autobody (GSA) offers vehicle owners a complete repair package from advanced structural repair
+                  to professional paint refinishing...
+                </p>
+              </div>
             </div>
-            <div class="footer">Austin</div>
+          </swiper-slide>
+
+            <swiper-slide>
+                <img src="images/receptionbanner.jpg">
+                <div class="overlay_contact_div">
+                    <h1>Welcome to Service Excellence</h1>
+                    <p>
+                      Great South Autobody (GSA) offers vehicle owners a complete repair package from advanced structural repair
+                      to professional paint refinishing...
+                    </p>
+                  </div>
+            </swiper-slide>
+
+            <swiper-slide>Slide 3</swiper-slide>
+          </swiper-container>
+          
+          <!-- Make sure this is included -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+          
         </div>
+      </div>
+
+      <div class="bannerBody">
+        <div class="oneStopShop">Austin</div>
+        <div class="courtesyCars">Austin</div>
+        <div class="wideRangeOfService">Elvie</div>
+        <div class="memberOfTheRmi">Elvie</div>
+        <div class="gallery">Elvie</div>
+        <div class="services">Elvie</div>
+        <div class="approvals">Austin</div>
+        <div class="contact">
+          <div class="aboutUs">
+            <h1>aboutUs</h1>
+            <p>
+              Great South Autobody (GSA), is located in the south of
+              Johannesburg and has been in service since 1972. Since inception
+              our family business has been known for our friendly service and
+              excellent workmanship. We're a level 2 BEE contributor and have
+              been accredited with a 100% recognition level.
+            </p>
+            <br />
+            <a href="#">Click here for our BEE certificate. </a>
+            <p>
+              We offer vehicle owners a complete repair package from advanced
+              structural repair to professional paint refinishing. By using the
+              latest technology and an excellent calibre of staff, we provide
+              paint work with a lifetime guarantee. It would be expected that
+              due to our state of the art equipment and expert workmanship that
+              our pricing would be inflated, however, our clients will pleased
+              to know that our prices are quoted against industry standards.
+            </p>
+            <br />
+            <a href="#">Click here for our PAIA Manual</a><br />
+            <a href="#">Click here for our Privacy Policy</a>
+          </div>
+          <div class="contactUs">
+            <h2>contactUs</h2>
+            <form class="contact-form">
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="tel" placeholder="Phone Number" required />
+              <textarea placeholder="Comments" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer">Austin</div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
