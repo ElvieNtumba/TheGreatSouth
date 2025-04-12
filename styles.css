@@ -104,7 +104,7 @@ swiper-container {
     object-fit: cover;
   }
 
-  .overlay_contact_div {
+  .overlay_contact_div2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -130,6 +130,22 @@ swiper-container {
     font-size: 1.2rem;
     max-width: 800px;
   }
+  /* .overlay_contact_div2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border: 2px solid red 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+   
+  } */
 
 
 
