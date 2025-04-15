@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The GreatSouth</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <script src="app.js"></script>
   </head>
   <body>
@@ -15,7 +16,11 @@
             <img src="images/navbarlogo.jpg" width="90%" />
           </div>
           <div class="icon_div">
-            <!-- <i class="fa-brands fa-facebook-f"></i> -->
+            <i class="fab fa-facebook" style="color: white; font-size: 24px;"></i>
+            <i class="fab fa-instagram" style="color: white; font-size: 24px;"></i>
+            <i class="fab fa-youtube" style="color: white; font-size: 24px;"></i>
+
+
           </div>
           <div class="contact_div">
             <nav>
@@ -46,10 +51,14 @@
           >
           <swiper-slide>
             <div class="slide-container">
-              <img src="images/banner.jpg" alt="Slide 1" width="100%" />
+              <img src="images/banner.jpg" id="carbanner" alt="Slide 1" />
               <div class="overlay_contact_div">
                 <h2> Welcome to Service Excellence</h2>
-                <p></p>
+                <p>Great South Autobody (GSA) offers vehicle owners a complete repair package from advanced 
+                  structural repair to professional paint refinishing. 
+                  By using the latest technology and an excellent calibre of staff, we provide paint work with a lifetime guarantee. 
+                  It would be expected that due to our state of the art equipment and expert workmanship that our pricing would be inflated, however,
+                   our clients will pleased to know that our prices are quoted against industry standards</p>
               </div>
             </div>
           </swiper-slide>
@@ -57,16 +66,21 @@
             <swiper-slide>
                 <img src="images/receptionbanner.jpg">
                 <div class="overlay_contact_div_two">
-                  <p>We’re Leaders in Auto Repair, Maintenance & Inspection</p>
                   <h1>Your One-Stop Solution For All Auto Repair Needs</h1>
-                  <div class="button-group">
-                    <a href="#contact" class="btn btn-orange">CONTACT</a>
-                    <a href="#services" class="btn btn-outline">SERVICE</a>
-                  </div>
+                  <p>We’re leaders in auto repair, maintenance, and inspection — offering fast<br>
+                    affordable, and reliable service for all makes and models. From engine diagnostics to routine check-ups,<br>
+                     our certified technicians have you covered</p>
                 </div>
             </swiper-slide>
 
-            <swiper-slide>Slide 3</swiper-slide>
+            <swiper-slide>
+              <img src="images/car.jpg">
+              <div class="overlay_contact_div_two">
+                <h2>Driven by Precision, Powered by Expertise</h2>
+                <h3>We combine hands-on experience with cutting-edge tools to quickly
+                   diagnose <br>and repair your vehicle — saving you time and stress every step of the way</h3>
+              </div>
+            </swiper-slide>
           </swiper-container>
           
           <!-- Make sure this is included -->
@@ -83,7 +97,7 @@
         <div class="gallery">Elvie</div>
         <div class="services">Elvie</div>
         <div class="approvals">Austin</div>
-        <div class="contact">
+        <div id="contact">
           <div class="aboutUs">
             <h1>AboutUs</h1>
             <p>
