@@ -1,34 +1,91 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.mainDiv{
-    height: 100%;
-    border: 2px solid black;
+.mainDiv {
+  height: 100%;
+  border: 2px solid black;
 }
 
-.homeBanner{
-    height: 100vh;
-    border: 2px solid rgb(255, 255, 255);
+.homeBanner {
+  height: 100vh;
+}
+.navbar {
+  width: 100%;
+  height: 17vh;
+  top: 0;
+  background-color: #01153e;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+}
+.logo_div {
+  width: 17%;
+  height: 110px;
+}
+.logo_div img {
+  padding-left: 30px;
+  height: 107px;
+}
+.icon_div {
+  width: 11%;
+  height: 30%;
+  margin-top: 73px;
+  gap: 10px;
+  display: flex;
+}
+.icon_div i {
+  padding-top: 7px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.contact_div {
+  width: 72%;
+  height: 100%;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.bannerBody{
-    height: 100%;
-    border: 2px solid blue;
+nav ul {
+  font-size: 18px;
+  font-weight: 700;
+  list-style: none;
+  padding-top: 73px;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
 }
 
-.oneStopShop{
-    height: 60vh;
-    border: 2px solid blueviolet;
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
-.courtesyCars{
-    height: 40vh;
-    border: 2px solid red;
+nav ul li a:hover {
+  color: #f39c12;
+}
+/* end of navbar contact */
+
+/* swipper begins */
+.swipper__container {
+  width: 100%;
+  height: 93vh;
+  /* border: 3px solid red; */
+  margin-top: 107px;
 }
 
+<<<<<<< HEAD
 .wideRangeOfService{
     height: 80vh;
     border: 2px solid green;
@@ -133,43 +190,321 @@
 .gallery{
     height: 80vh;
     border: 2px solid pink;
+=======
+swiper-container {
+  width: 100%;
+  height: 100%;
 }
 
-.footer{
-    height: 40vh;
-    border: 2px solid brown;
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: 99%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.services{
-    height: 60vh;
-    border: 2px solid purple;
+swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+}
+#carbanner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+>>>>>>> main
 }
 
-.approvals{
-    height: 60vh;
-    border: 2px solid cyan;
+.overlay_contact_div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  z-index: 2;
 }
 
-.contact{
-    height: 60vh;
-    border: 2px solid grey;
-    display: flex;
+.overlay_contact_div h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.aboutUs{
-    height: 100%;
-    border: 2px solid lightblue;
-    width: 50%;
+.overlay_contact_div p {
+  font-size: 1.2rem;
+  max-width: 800px;
+}
+.overlay_contact_div_two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.4); /* Optional dark overlay for readability */
+  padding: 0 20px;
 }
 
-.contactUs{
-    height: 100%;
-    border: 2px solid yellow;
-    width: 50%;
+.overlay_contact_div_two p {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 601px) {
-    div.mainDiv {
-      width: 100%;
-    }
-  }
+.overlay_contact_div_two h1 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  max-width: 800px;
+  margin: 5px 0 30px;
+  padding-left: 10px;
+}
+.overlay_contact_div_two h2 {
+  font-size: 38px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.overlay_contact_div_two h3 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-orange {
+  background-color: #f37021;
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #d55a0e;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: #333;
+}
+
+.bannerBody {
+  height: 100%;
+  border: 2px solid blue;
+}
+
+.oneStopShop {
+  height: 60vh;
+  border: 2px solid blueviolet;
+}
+
+.courtesyCars {
+  height: 40vh;
+  border: 2px solid red;
+}
+
+.wideRangeOfService {
+  height: 60vh;
+  border: 2px solid green;
+}
+
+.memberOfTheRmi {
+  height: 60vh;
+  border: 2px solid orange;
+}
+
+.gallery {
+  height: 60vh;
+  border: 2px solid pink;
+}
+
+.footer {
+  height: 40vh;
+  border: 2px solid brown;
+}
+
+.services {
+  height: 60vh;
+  border: 2px solid purple;
+}
+
+.approvals {
+  height: 60vh;
+  border: 2px solid cyan;
+}
+/* contact section begins */
+#contact {
+  min-height: 70vh;
+  display: flex;
+  background-color: #c0c0c0;
+  font-family: Arial, sans-serif;
+}
+
+.aboutUs {
+  width: 50%;
+  padding: 30px;
+  background-color: #01153e;
+  color: white;
+  box-sizing: border-box;
+}
+
+.aboutUs h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.aboutUs p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.aboutUs a {
+  color: #87cefa;
+  text-decoration: underline;
+  margin-left: 20px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contactUs {
+  width: 50%;
+  padding: 30px;
+  background-color: #e6e6e6;
+  box-sizing: border-box;
+}
+
+.contactUs h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #01153e;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #01153e;
+}
+
+.contactUs {
+  height: 100%;
+  border: 2px solid yellow;
+  width: 50%;
+}
+.contact-container {
+  max-width: 600px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #fff;
+  border-bottom: 2px solid #00aaff;
+  padding-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  /* background-color: #222; */
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00aaff;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 85px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #01153e;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
